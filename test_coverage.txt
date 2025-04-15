@@ -1,0 +1,97 @@
+Name                                                                      Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------------------------------
+src/backend/__init__.py                                                       0      0   100%
+src/backend/application/__init__.py                                           0      0   100%
+src/backend/application/committer.py                                          4      1    75%   6
+src/backend/application/errors.py                                            18      0   100%
+src/backend/application/password_hasher.py                                    6      2    67%   6, 9
+src/backend/application/repositories/__init__.py                              0      0   100%
+src/backend/application/repositories/auth_token.py                           17      6    65%   10, 13, 16, 19, 22, 25
+src/backend/application/repositories/film.py                                 13      4    69%   10, 13, 16, 19
+src/backend/application/repositories/genre.py                                10      2    80%   11, 14
+src/backend/application/repositories/mix.py                                  17      5    71%   12, 15, 18, 21, 24
+src/backend/application/repositories/mood.py                                  9      2    78%   10, 13
+src/backend/application/repositories/recommended_film.py                     10      2    80%   11, 14
+src/backend/application/repositories/user.py                                 12      4    67%   9, 12, 15, 18
+src/backend/application/repositories/watchlist.py                            27      9    67%   14, 17, 20, 23, 26, 29, 32, 35, 38
+src/backend/config/__init__.py                                                0      0   100%
+src/backend/config/settings.py                                               13      0   100%
+src/backend/constant.py                                                       1      0   100%
+src/backend/domain/__init__.py                                                0      0   100%
+src/backend/domain/auth_token.py                                             12      0   100%
+src/backend/domain/auth_token_id.py                                           3      0   100%
+src/backend/domain/film.py                                                   13      0   100%
+src/backend/domain/film_id.py                                                 3      0   100%
+src/backend/domain/genre.py                                                   6      0   100%
+src/backend/domain/genre_id.py                                                3      0   100%
+src/backend/domain/mix.py                                                    10      0   100%
+src/backend/domain/mix_id.py                                                  3      0   100%
+src/backend/domain/mix_item.py                                                9      0   100%
+src/backend/domain/mood.py                                                    6      0   100%
+src/backend/domain/mood_id.py                                                 3      0   100%
+src/backend/domain/recommended_film.py                                       11      0   100%
+src/backend/domain/user.py                                                    9      0   100%
+src/backend/domain/user_id.py                                                 3      0   100%
+src/backend/domain/watchlist.py                                              14      0   100%
+src/backend/domain/watchlist_id.py                                            3      0   100%
+src/backend/domain/watchlist_item.py                                          9      0   100%
+src/backend/domain/watchlist_type.py                                          7      0   100%
+src/backend/infrastructure/__init__.py                                        0      0   100%
+src/backend/infrastructure/argon2_password_hasher.py                         12      2    83%   18-19
+src/backend/infrastructure/ioc.py                                            62      2    97%   38, 61
+src/backend/infrastructure/persistence/__init__.py                            0      0   100%
+src/backend/infrastructure/persistence/committer.py                           7      0   100%
+src/backend/infrastructure/persistence/mappers/__init__.py                    0      0   100%
+src/backend/infrastructure/persistence/mappers/auth_token.py                  8      0   100%
+src/backend/infrastructure/persistence/mappers/film.py                        8      0   100%
+src/backend/infrastructure/persistence/mappers/genre.py                       7      1    86%   11
+src/backend/infrastructure/persistence/mappers/mix.py                         7      2    71%   7, 17
+src/backend/infrastructure/persistence/mappers/mix_item.py                    8      2    75%   8, 16
+src/backend/infrastructure/persistence/mappers/mood.py                        7      1    86%   11
+src/backend/infrastructure/persistence/mappers/recommended_film.py            8      0   100%
+src/backend/infrastructure/persistence/mappers/user.py                        7      0   100%
+src/backend/infrastructure/persistence/mappers/watchlist.py                   8      0   100%
+src/backend/infrastructure/persistence/mappers/watchlist_item.py              8      0   100%
+src/backend/infrastructure/persistence/models/__init__.py                     0      0   100%
+src/backend/infrastructure/persistence/models/auth_token.py                  15      0   100%
+src/backend/infrastructure/persistence/models/base.py                        17     12    29%   10-21
+src/backend/infrastructure/persistence/models/film.py                        15      0   100%
+src/backend/infrastructure/persistence/models/film_genre.py                   7      0   100%
+src/backend/infrastructure/persistence/models/genre.py                        7      0   100%
+src/backend/infrastructure/persistence/models/genre_mood.py                   7      0   100%
+src/backend/infrastructure/persistence/models/mix.py                         10      0   100%
+src/backend/infrastructure/persistence/models/mix_item.py                    13      0   100%
+src/backend/infrastructure/persistence/models/mood.py                         7      0   100%
+src/backend/infrastructure/persistence/models/recommended_film.py            14      0   100%
+src/backend/infrastructure/persistence/models/user.py                        11      0   100%
+src/backend/infrastructure/persistence/models/watchlist.py                   15      0   100%
+src/backend/infrastructure/persistence/models/watchlist_item.py              13      0   100%
+src/backend/infrastructure/persistence/repositories/__init__.py               0      0   100%
+src/backend/infrastructure/persistence/repositories/auth_token.py            58     32    45%   26, 29-33, 38-40, 43-48, 51-59, 62-69
+src/backend/infrastructure/persistence/repositories/film.py                  45     13    71%   28, 33-35, 41-43, 49-54
+src/backend/infrastructure/persistence/repositories/genre.py                 31      5    84%   34, 38, 43-45
+src/backend/infrastructure/persistence/repositories/mix.py                   48     16    67%   36, 41-43, 46-51, 54-55, 58-61
+src/backend/infrastructure/persistence/repositories/mood.py                  25      4    84%   26, 31-33
+src/backend/infrastructure/persistence/repositories/recommended_film.py      25      3    88%   31, 40-41
+src/backend/infrastructure/persistence/repositories/user.py                  38     13    66%   25, 30-32, 37-39, 42-47
+src/backend/infrastructure/persistence/repositories/watchlist.py             69     19    72%   42, 47-49, 54-60, 64-66, 71-72, 108, 115-117, 121-122
+src/backend/infrastructure/services/__init__.py                               0      0   100%
+src/backend/infrastructure/services/gpt.py                                  115     66    43%   17-18, 42-44, 46-51, 65-79, 83-89, 96-102, 109-142, 182-195
+src/backend/infrastructure/services/s3.py                                    28     13    54%   20-29, 32-45
+src/backend/infrastructure/services/tmdb.py                                 319    189    41%   169-171, 184-190, 202-208, 211-236, 239-244, 247-252, 256, 260-261, 274, 276, 284-286, 289, 303, 324-326, 334, 348-404, 407-431, 434-458, 462-486, 489-519, 528, 545-548, 561, 575, 582-584, 587-623, 648-650
+src/backend/main/__init__.py                                                  0      0   100%
+src/backend/main/app.py                                                      23      0   100%
+src/backend/presentation/__init__.py                                          0      0   100%
+src/backend/presentation/controllers/__init__.py                              0      0   100%
+src/backend/presentation/controllers/auth.py                                 48     16    67%   51-64, 78-92
+src/backend/presentation/controllers/film.py                                245    144    41%   39, 42, 57-58, 71, 74, 81-86, 104-105, 111-114, 117-152, 155-176, 199-226, 230-233, 239, 255-262, 299-304, 317-343, 357-368, 381-383, 398-412
+src/backend/presentation/controllers/genre.py                                22      2    91%   30-31
+src/backend/presentation/controllers/me.py                                  204     98    52%   35-40, 65-66, 88-89, 101-105, 118-132, 150-162, 180-193, 212-219, 232-238, 252-263, 281-287, 299-305, 317-330, 348-355, 367-373, 384-389
+src/backend/presentation/controllers/mix.py                                  55     24    56%   30-56, 84-85, 97-108
+src/backend/presentation/controllers/mood.py                                 23      2    91%   35-36
+src/backend/presentation/controllers/recommend.py                            96     47    51%   40-47, 80-88, 91-92, 97-109, 116, 123, 126, 149-174
+src/backend/presentation/controllers/telegram_auth.py                        46     16    65%   38-40, 50-64, 79-97
+src/backend/presentation/jwt.py                                              22      3    86%   16, 27-28
+src/backend/presentation/schemas.py                                          78      0   100%
+-------------------------------------------------------------------------------------------------------
+TOTAL                                                                      2255    784    65%
